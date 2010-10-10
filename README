@@ -1,0 +1,61 @@
+================================================================================
+shoppingCart
+================================================================================
+It is a open source cart developed using Python language.
+
+Majour Feature(s):
+===========
+
+    1. Product options support.
+    2. Multitime discount support.
+    3. Multitime taxes support(specific to product as well as general taxes).
+    4. Multi currency support.
+    5. Tax Exclude and Include total.
+    6. Shipping method and charge.
+    
+Important(s):
+========
+
+    1. Tax dictionary should be like this :
+    --------------------------------------------------
+    ==> {'amount': 10.00, 'type': 'percentage'} OR
+    ==> {'amount': 10.00, 'type': 'fixed'}
+    
+    2. Option dictionary should be like this :
+    ------------------------------------------------------
+    ==> {'color': {'red': {'price': 10.00}}} OR
+    ==> {option_object: {option_value_object:{'price': 10.00}}} OR
+    ==> {option_object: option_value_object}
+    
+    3. if cart item is object then it should have `id` field(Unique KeyField) like this:
+    ------------------------------------------------------------------------------------------------------------
+    ==> For Example:
+            class Product(object):
+                def __init__(self):
+                    self.id = None
+            product = Product()
+            
+            from shoppingCart import Cart
+            cart = Cart()
+            cart.add_item(product=product, price=10.00, quantity=1)
+            
+Reference(s):
+========
+    
+    1. Currancy Conversation:
+    -----------------------------------
+    Used http://www.webservicex.net to know currancy value.
+    For Example:
+        http://www.webservicex.net/CurrencyConvertor.asmx/ConversionRate?FromCurrency=EUR&ToCurrency=USD
+
+TODO List:
+=======
+    - Multi site.
+    - Variants and recommonded product calculation.(DONE)
+    - Multi currency calculation.(DONE)
+    - Tax exclude and include calculation.(DONE)
+    - Discount voucher.(DONE)
+    - Multi tax calculation(country region wise).(DONE)
+    - Support different shipping method and it's charges addition.(DONE)
+    - Support different Payment method and checkout feature.
+    - XML and JSON output.

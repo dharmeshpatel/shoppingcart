@@ -1,0 +1,40 @@
+################################################################################
+#
+#    Copyright (C) 2010 Dharmesh Patel <mr.dlpatel@gmail.com>.
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+################################################################################
+
+TODO:
+=====
+        - Multi site.
+        - product base tax calculation.
+        - product weight calculation.(NEW)
+        - option value calculation.
+        - Variants and recommonded product calculation.(DONE)
+        - Multi currency calculation.(DONE)
+        - Tax exclude and include calculation.(DONE)
+        - Discount voucher.(DONE)(can be dictionary type)
+        - Multi tax calculation(country region wise).(DONE)
+        - Support different shipping method and it's charges addition.(DONE)
+        - Support different Payment method and checkout feature.
+        - XML and JSON output.
+        - cart item tax adding in total_tax calculation.(NEW)
+        - cart item option has a quantity key same like a price key.(NEW)
+        - discount on cart item price and calculate sub_total of cart item after discount deduction.(NEW)
+        - round fugure check for tax_amount in cart as well as in cart item object.(NEW)
+        - unit test with site and customer object and raise exception generate.
+        - need to give more name convention to methods.
