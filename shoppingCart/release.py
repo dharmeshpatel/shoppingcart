@@ -24,25 +24,25 @@ name            = 'shoppingCart'
 version         = '1.0.0'
 major_version   = '1'
 description     = 'Shopping Cart'
-long_desc       = """shoppingCart is a open source cart developed using Python language.
+long_description= """shoppingCart is a open source cart developed using Python language.
 
                            Majour Feature(s):
 
-                           1. Product variant support.
-                           2. Multiple discount coupon(With single time OR multi time usage) support.
-                           3. Multiple taxes calculation support.
+                           1. Product options support.
+                           2. Multitime discount support.
+                           3. Multitime taxes support(specific to product as well as general taxes).
                            4. Multi currency support.
                            5. Tax Exclude and Include total.
                            6. Shipping method and charge.
                   """
 classifiers     = [
-                        "Development Status :: 1 - Production/Stable",
+                        "Development Status :: 5 - Production/Stable",
                         "License :: OSI Approved :: GNU General Public License (GPL)",
                         "Programming Language :: Python"
                      ]
-url             = 'http://www.dharmeshpatel.co.in'
+url             = 'https://bitbucket.org/dharmeshpatel/shoppingcart'
 author          = 'Dharmesh Patel'
-author_email    = 'me@dharmeshpatel.co.in'
+author_email    = 'mr.dlpatel@gmail.com'
 license         = 'GPL-3'
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

@@ -2,8 +2,6 @@ import os
 from setuptools import setup
 
 execfile(os.path.join('shoppingCart', 'release.py'))
-README = os.path.join(os.path.dirname(__file__), 'README')
-long_description = open(README).read() + '\n\n'
 
 setup(
     name='shoppingCart',
