@@ -14,7 +14,7 @@ shoppingCart
 
 Links
 ========================================
-pypi page: http://pypi.python.org/pypi/shoppingCart.cart
+pypi page: http://pypi.python.org/pypi/shoppingCart
 
 Licence
 ========================================
