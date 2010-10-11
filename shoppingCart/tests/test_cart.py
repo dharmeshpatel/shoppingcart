@@ -8,13 +8,6 @@ import unittest
 
 from product import Product, Option, OptionValue
 from discount_coupon import DiscountCoupon
-
-#dirname = os.path.dirname(__file__)
-#print "dirname : ", dirname
-
-#if not dirname not in sys.path:
-#    sys.path.append(os.path.split(dirname)[0])
-
 from shoppingCart import Cart
 
 class CartTest(unittest.TestCase):
@@ -58,17 +51,17 @@ class CartTest(unittest.TestCase):
         cart_obj = Cart()
         self.assertEqual(cart_obj.is_discount_applied, False)
         discount_coupon = DiscountCoupon(code='ByQ343X', expiry_date='2010-11-30 12:00:00', type='percentage', discount=30)
-        self.assertEqual(cart_obj.discount_apply(discount_coupon.discount, discount_coupon.type), True)
+        self.assertEqual(cart_obj.add_discount(discount_coupon.discount, discount_coupon.type), True)
         discount_coupon = DiscountCoupon(code='Ax9812Y', expiry_date='2010-12-31 12:00', type='percentage', discount=30)
-        self.assertEqual(cart_obj.discount_apply(discount_coupon.discount, discount_coupon.type), True)
+        self.assertEqual(cart_obj.add_discount(discount_coupon.discount, discount_coupon.type), True)
         self.assertEqual(cart_obj.is_discount_applied, True)
         self.assertEqual([discount for discount in cart_obj.get_discounts()], [{'amount': 30, 'type': 'percentage'}, {'amount': 30, 'type': 'percentage'}])
 
     def test_apply_remove_tax(self):
         cart_obj = Cart()
-        self.assertEqual(cart_obj.tax_apply(19.6, type='percentage'), True)
-        self.assertEqual(cart_obj.tax_apply(20.1, type='fixed'), True)
-        self.assertEqual(cart_obj.tax_apply(19.6, type='percentage'), False)
+        self.assertEqual(cart_obj.add_tax(19.6, type='percentage'), True)
+        self.assertEqual(cart_obj.add_tax(20.1, type='fixed'), True)
+        self.assertEqual(cart_obj.add_tax(19.6, type='percentage'), False)
         self.assertEqual(cart_obj.get_taxes(), [{'amount': 19.600000000000001, 'type': 'percentage'}, {'amount': 20.100000000000001, 'type': 'fixed'}])
         self.assertEqual(cart_obj.remove_tax(10), False)
         self.assertEqual(cart_obj.remove_tax(20.1, type='fixed'), True)
@@ -84,7 +77,7 @@ class CartTest(unittest.TestCase):
         cart_obj.add_item(product=1, price=10.00, quantity=1)
         cart_obj.add_item(product=2, price=12.25, quantity=2.5)
         self.assertEqual('%s %s'%(cart_obj.sub_total(), cart_obj.currency_symbol), '40.63 €')
-        cart_obj.discount_apply(discount_coupon.discount, discount_coupon.type)
+        cart_obj.add_discount(discount_coupon.discount, discount_coupon.type)
         self.assertEqual('%s %s'%(cart_obj.total_discount(), cart_obj.currency_symbol), '12.19 €')
 
     def test_sub_total(self):
@@ -110,7 +103,7 @@ class CartTest(unittest.TestCase):
         cart_obj.currency_code = 'EUR'
         cart_obj.add_item(product=1, price=10.00, quantity=1)
         cart_obj.add_item(product=2, price=12.25, quantity=2.5)
-        self.assertEqual(cart_obj.tax_apply(19.6, type='percentage'), True)
+        self.assertEqual(cart_obj.add_tax(19.6, type='percentage'), True)
         cart_obj.type = 'tax_excluded'
         self.assertEqual('%s %s'%(cart_obj.total_tax(), cart_obj.currency_symbol), '7.96 €')
         cart_obj.type = 'tax_included'
@@ -126,9 +119,9 @@ class CartTest(unittest.TestCase):
         cart_obj.add_item(product=1, price=10.00, quantity=1)
         cart_obj.add_item(product=2, price=12.25, quantity=2.5)
         self.assertEqual('%s %s'%(cart_obj.sub_total(), cart_obj.currency_symbol), '40.63 €')
-        self.assertEqual(cart_obj.discount_apply(discount_coupon.discount, discount_coupon.type), True)
+        self.assertEqual(cart_obj.add_discount(discount_coupon.discount, discount_coupon.type), True)
         self.assertEqual('%s %s'%(cart_obj.total_discount(), cart_obj.currency_symbol), '12.19 €')        
-        self.assertEqual(cart_obj.tax_apply(19.6, type='percentage'), True)
+        self.assertEqual(cart_obj.add_tax(19.6, type='percentage'), True)
         cart_obj.type = 'tax_excluded'
         self.assertEqual('%s %s'%(cart_obj.total_tax(), cart_obj.currency_symbol), '5.57 €')        
         self.assertEqual('%s %s'%(cart_obj.total_untaxed_amount(), cart_obj.currency_symbol), '28.44 €')
@@ -147,9 +140,9 @@ class CartTest(unittest.TestCase):
         cart_obj.add_item(product=1, price=10.00, quantity=1)
         cart_obj.add_item(product=2, price=12.25, quantity=2.5)
         self.assertEqual('%s %s'%(cart_obj.sub_total(), cart_obj.currency_symbol), '40.63 €')
-        self.assertEqual(cart_obj.discount_apply(discount_coupon.discount, discount_coupon.type), True)
+        self.assertEqual(cart_obj.add_discount(discount_coupon.discount, discount_coupon.type), True)
         self.assertEqual('%s %s'%(cart_obj.total_discount(), cart_obj.currency_symbol), '12.19 €')        
-        self.assertEqual(cart_obj.tax_apply(19.6, type='percentage'), True)
+        self.assertEqual(cart_obj.add_tax(19.6, type='percentage'), True)
         cart_obj.type = 'tax_excluded' # set type with `tax_excluded`
         self.assertEqual('%s %s'%(cart_obj.total_untaxed_amount(), cart_obj.currency_symbol), '28.44 €')
         self.assertEqual('%s %s'%(cart_obj.total_tax(), cart_obj.currency_symbol), '5.57 €')

@@ -160,7 +160,7 @@ class Cart(object):
         """
         return self.__items
 
-    def discount_apply(self, amount, type='percentage'):
+    def add_discount(self, amount, type='percentage'):
         """
         To apply discount.
         
@@ -184,7 +184,7 @@ class Cart(object):
         """
         return self.__discounts
         
-    def tax_apply(self, amount, type='percentage'):
+    def add_tax(self, amount, type='percentage'):
         """
         To apply taxes.
         

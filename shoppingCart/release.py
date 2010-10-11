@@ -29,8 +29,8 @@ long_description= """shoppingCart is a open source cart developed using Python l
                            Majour Feature(s):
 
                            1. Product options support.
-                           2. Multitime discount support.
-                           3. Multitime taxes support(specific to product as well as general taxes).
+                           2. Multi discount support.
+                           3. Multi taxes support(specific to product as well as general taxes).
                            4. Multi currency support.
                            5. Tax Exclude and Include total.
                            6. Shipping method and charge.
