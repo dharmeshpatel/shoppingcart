@@ -13,4 +13,4 @@ lives. Some places you might check are:
     /usr/lib/python2.5/site-packages (Unix, Python 2.5)
     C:\\PYTHON\site-packages         (Windows)
 
-For more detailed instructions, see docs/intro/install.rst.
+For more detailed instructions, see docs/intro/install.txt.

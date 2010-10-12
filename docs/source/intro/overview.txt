@@ -3,9 +3,9 @@
 Overview
 ================================================================================
 
-*shoppingCart* is a open source cart developed using `Python`_ language. It is to manage cart in Ecommerce applications.
+**shoppingCart** is a open source cart developed using `Python`_ language. It is to manage cart in Ecommerce applications.
 
-Main Feature(s):
+**Main Feature(s):**
    1. Product options support.
    2. Multi discount support.
    3. Multi taxes support(specific to product as well as general taxes).
