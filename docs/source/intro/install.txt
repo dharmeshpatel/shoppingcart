@@ -1,4 +1,7 @@
-Thanks for downloading shoppingCart.
+.. _intro-install:
+
+Install
+================================================================================
 
 To install it, make sure you have Python 2.5 or greater and python-setuptools module is installed.
 Then run this command from the command prompt:
@@ -12,5 +15,3 @@ lives. Some places you might check are:
     /usr/local/lib/python2.6/dist-packages (Unix, Python 2.6)
     /usr/lib/python2.5/site-packages (Unix, Python 2.5)
     C:\\PYTHON\site-packages         (Windows)
-
-For more detailed instructions, see docs/intro/install.rst.

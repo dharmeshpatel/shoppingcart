@@ -21,20 +21,19 @@
 ################################################################################
 
 name            = 'shoppingCart'
-version         = '1.0.0'
+version         = '1.1.0'
 major_version   = '1'
-description     = 'Shopping Cart'
-long_description= """shoppingCart is a open source cart developed using Python language.
+description     = 'shoppingCart is a open source cart developed using Python language.It is to manage cart in Ecommerce applications.'
+long_description= """
+Majour Feature(s):
 
-                           Majour Feature(s):
-
-                           1. Product options support.
-                           2. Multi discount support.
-                           3. Multi taxes support(specific to product as well as general taxes).
-                           4. Multi currency support.
-                           5. Tax Exclude and Include total.
-                           6. Shipping method and charge.
-                  """
+1. Product options support.
+2. Multi discount support.
+3. Multi taxes support(specific to product as well as general taxes).
+4. Multi currency support.
+5. Tax Exclude and Include total.
+6. Shipping method and charge.
+"""
 classifiers     = [
                         "Development Status :: 5 - Production/Stable",
                         "License :: OSI Approved :: GNU General Public License (GPL)",

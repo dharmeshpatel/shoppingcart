@@ -1,0 +1,6 @@
+include CHANGES COPYING README INSTALL
+recursive-include shoppingCart *
+recursive-include docs *
+prune docs/build
+prune .hg
+global-exclude *pyc

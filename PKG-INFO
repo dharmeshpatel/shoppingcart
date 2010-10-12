@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: shoppingCart
+Version: 1.1.0
+Summary: shoppingCart is a open source cart developed using Python language.It is to manage cart in Ecommerce applications.
+Home-page: https://bitbucket.org/dharmeshpatel/shoppingcart
+Author: Dharmesh Patel
+Author-email: mr.dlpatel@gmail.com
+License: GPL-3
+Description: 
+        Majour Feature(s):
+        
+        1. Product options support.
+        2. Multi discount support.
+        3. Multi taxes support(specific to product as well as general taxes).
+        4. Multi currency support.
+        5. Tax Exclude and Include total.
+        6. Shipping method and charge.
+        
+Keywords: cart  shopcart shoppingcart e-shop e-shopcart e-shoppingCart
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
