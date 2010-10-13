@@ -21,7 +21,7 @@
 ################################################################################
 
 name            = 'shoppingCart'
-version         = '1.1.0'
+version         = '1.2.0'
 major_version   = '1'
 description     = 'shoppingCart is a open source cart developed using Python language.It is to manage cart in Ecommerce applications.'
 long_description= """
