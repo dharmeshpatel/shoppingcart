@@ -41,7 +41,7 @@ classifiers     = [
                      ]
 url             = 'https://bitbucket.org/dharmeshpatel/shoppingcart'
 author          = 'Dharmesh Patel'
-author_email    = 'mr.dlpatel@gmail.com'
+author_email    = 'mr[dot]dlpatel[at]gmail[dot]com'
 license         = 'GPL-3'
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

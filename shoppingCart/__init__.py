@@ -18,6 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ################################################################################
+
 __import__('pkg_resources').declare_namespace(__name__)
 from shoppingCart.release import version as __version__
 from shoppingCart.cart import Cart
