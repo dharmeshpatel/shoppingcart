@@ -17,5 +17,6 @@ setup(
     platforms='any',
     keywords='cart  shopcart shoppingcart e-shop e-shopcart e-shoppingCart',
     include_package_data=True,
-    namespace_packages=['shoppingCart']
+    namespace_packages=['shoppingCart'],
+    zip_safe=False
 )

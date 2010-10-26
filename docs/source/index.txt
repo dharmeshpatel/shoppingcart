@@ -15,7 +15,9 @@ Links
 ========================================
 pypi page: http://pypi.python.org/pypi/shoppingCart
 
-Licence
+repository page: http://bitbucket.org/dharmeshpatel/shoppingcart
+
+License
 ========================================
 
 This documentation is under the GFDL

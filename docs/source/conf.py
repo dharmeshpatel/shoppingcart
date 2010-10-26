@@ -48,7 +48,7 @@ copyright = u'2010, Dharmesh Patel'
 # built documents.
 #
 # The short X.Y version.
-version = '1.2.0'
+version = '1.3.0'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -110,7 +110,7 @@ html_theme = 'default'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'logo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -179,12 +179,12 @@ htmlhelp_basename = 'shoppingCartdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'shoppingCart.tex', u'shoppingCart Documentation',
-   u'others', 'manual'),
+   u'copyright: (c) 2010 Dharmesh Patel', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'logo.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -212,5 +212,5 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'shoppingcart', u'shoppingCart Documentation',
-     [u'others'], 1)
+     [u'copyright: (c) 2010 Dharmesh Patel'], 1)
 ]
