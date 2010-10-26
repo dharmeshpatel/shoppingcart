@@ -17,6 +17,8 @@ pypi page: http://pypi.python.org/pypi/shoppingCart
 
 repository page: http://bitbucket.org/dharmeshpatel/shoppingcart
 
+document link: https://bitbucket.org/dharmeshpatel/shoppingcart/downloads/shoppingCart_user_guide.pdf
+
 License
 ========================================
 
