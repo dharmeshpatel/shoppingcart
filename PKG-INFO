@@ -1,8 +1,8 @@
 Metadata-Version: 1.0
 Name: shoppingCart
-Version: 1.3.0
+Version: 1.4.2
 Summary: shoppingCart is a open source cart developed using Python language to manage cart in Ecommerce applications.
-Home-page: https://bitbucket.org/dharmeshpatel/shoppingcart
+Home-page: https://github.com/dharmeshpatel/shoppingcart
 Author: Dharmesh Patel
 Author-email: mr[dot]dlpatel[at]gmail[dot]com
 License: BSD

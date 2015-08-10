@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 ################################################################################
 #
-#    Copyright (C) 2010 Dharmesh Patel <mr.dlpatel@gmail.com>.
+#    Copyright (C) 2010 - 2015 Dharmesh Patel <mr.dlpatel@gmail.com>.
 #    Licence : BSD, see LICENSE for more details.
 #
 ################################################################################

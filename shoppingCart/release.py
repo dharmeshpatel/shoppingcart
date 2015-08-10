@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 ################################################################################
 #
-#    Copyright (C) 2010 Dharmesh Patel <mr.dlpatel@gmail.com>.
+#    Copyright (C) 2010 - 2015 Dharmesh Patel <mr.dlpatel@gmail.com>.
 #    $Id$
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 ################################################################################
 
 name            = 'shoppingCart'
-version         = '1.3.0'
+version         = '1.4.2'
 major_version   = '1'
 description     = 'shoppingCart is a open source cart developed using Python language to manage cart in Ecommerce applications.'
 long_description= """
@@ -39,10 +39,10 @@ classifiers     = [
                         "License :: OSI Approved :: BSD License",
                         "Programming Language :: Python"
                      ]
-url             = 'http://bitbucket.org/dharmeshpatel/shoppingcart'
+url             = 'https://github.com/dharmeshpatel/shoppingcart'
 author          = 'Dharmesh Patel'
 author_email    = 'mr[dot]dlpatel[at]gmail[dot]com'
-copyright       = 'Copyright (c) 2010 Dharmesh Patel'
+copyright       = 'Copyright (c) 2010 - 2015 Dharmesh Patel'
 license         = 'BSD'
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
