@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # shoppingCart documentation build configuration file, created by
-# sphinx-quickstart on Mon Aug 23 12:15:16 2010.
+# sphinx-quickstart on Sun Aug 9 22:03:10 2015.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -41,14 +41,14 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'shoppingCart'
-copyright = u'2010, Dharmesh Patel'
+copyright = u'2015, Dharmesh Patel'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '1.3.0'
+version = '1.4.2'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -179,7 +179,7 @@ htmlhelp_basename = 'shoppingCartdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'shoppingCart.tex', u'shoppingCart Documentation',
-   u'copyright: (c) 2010 Dharmesh Patel', 'manual'),
+   u'copyright: (c) 2015 Dharmesh Patel', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -212,5 +212,5 @@ latex_logo = 'logo.png'
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'shoppingcart', u'shoppingCart Documentation',
-     [u'copyright: (c) 2010 Dharmesh Patel'], 1)
+     [u'copyright: (c) 2015 Dharmesh Patel'], 1)
 ]
